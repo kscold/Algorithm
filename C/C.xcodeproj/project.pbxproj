@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F00FC92A6AA076002E4F3B /* 순차탐색.c in Sources */ = {isa = PBXBuildFile; fileRef = 87F00FC82A6AA076002E4F3B /* 순차탐색.c */; };
+		87E444172A6AA9B500E5CE8C /* 문자열.c in Sources */ = {isa = PBXBuildFile; fileRef = 87E444162A6AA9B500E5CE8C /* 문자열.c */; };
+		87F00FCD2A6AA4E3002E4F3B /* 포인터.c in Sources */ = {isa = PBXBuildFile; fileRef = 87F00FCC2A6AA4E3002E4F3B /* 포인터.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87E444162A6AA9B500E5CE8C /* 문자열.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "문자열.c"; sourceTree = "<group>"; };
 		87F00FBC2A6A9D21002E4F3B /* C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F00FC82A6AA076002E4F3B /* 순차탐색.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "순차탐색.c"; sourceTree = SOURCE_ROOT; };
+		87F00FCC2A6AA4E3002E4F3B /* 포인터.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "포인터.c"; path = "C/포인터.c"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		87F00FBE2A6A9D21002E4F3B /* C */ = {
 			isa = PBXGroup;
 			children = (
-				87F00FC82A6AA076002E4F3B /* 순차탐색.c */,
+				87F00FCC2A6AA4E3002E4F3B /* 포인터.c */,
+				87E444162A6AA9B500E5CE8C /* 문자열.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -119,7 +122,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F00FC92A6AA076002E4F3B /* 순차탐색.c in Sources */,
+				87E444172A6AA9B500E5CE8C /* 문자열.c in Sources */,
+				87F00FCD2A6AA4E3002E4F3B /* 포인터.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
