@@ -1,6 +1,8 @@
-n = int(input()) # 수열 갯수 입력
+import sys
+
+n = int(sys.stdin.readline()) # 수열 갯수 입력
 ans = [0] * n # 정답 리스트 초기화
-A = list(map(int, input().split())) # 수열 리스트 채우기
+A = list(map(int, sys.stdin.readline().split())) # 수열 리스트 채우기
 myStack = [] # 스택을 선언
 
 for i in range(n): # 수열 갯수만큼 반복 인덱스 i에 저장(0부터 n+1까지)
@@ -11,8 +13,4 @@ for i in range(n): # 수열 갯수만큼 반복 인덱스 i에 저장(0부터 n+
 while myStack: # 스택이 존재하면(즉, 스택이 존재하지 않으면 브레이크)
     ans[myStack.pop()] = -1 # 정답 리스트의 마지막 인덱스(top, 즉 마지막 인덱스)를 -1로 설정
 
-result = "" # 문자열로 초기화
-for i in range(n): # 수열 갯수만큼 인덱스 i에 저장
-    result += str(ans[i]) + " " # 정답 리스트에 공백을 붙여서 출력값을 result 변수에 저장
-
-print(result)
+print(' '.join(map(str, ans)))
