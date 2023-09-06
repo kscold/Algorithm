@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F6211B2A6C3C1A008AF76E /* 문자열 예제1.c in Sources */ = {isa = PBXBuildFile; fileRef = 87F6211A2A6C3C1A008AF76E /* 문자열 예제1.c */; };
+		87048A692AA8B7F800725C77 /* dp_concept.c in Sources */ = {isa = PBXBuildFile; fileRef = 87048A682AA8B7F800725C77 /* dp_concept.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87048A652AA8543900725C77 /* debug_example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug_example.c; sourceTree = "<group>"; };
+		87048A682AA8B7F800725C77 /* dp_concept.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dp_concept.c; sourceTree = "<group>"; };
 		8784EBC62A6C361500D55483 /* 단어입력.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "단어입력.c"; sourceTree = "<group>"; };
 		87E444162A6AA9B500E5CE8C /* 문자열.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "문자열.c"; path = "C/문자열.c"; sourceTree = SOURCE_ROOT; };
 		87E4441C2A6AB12100E5CE8C /* 파일.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "파일.c"; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87048A6B2AA8B83900725C77 /* concept */ = {
+			isa = PBXGroup;
+			children = (
+				87048A682AA8B7F800725C77 /* dp_concept.c */,
+			);
+			path = concept;
+			sourceTree = "<group>";
+		};
 		87F00FB32A6A9D21002E4F3B = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +71,13 @@
 		87F00FBE2A6A9D21002E4F3B /* C */ = {
 			isa = PBXGroup;
 			children = (
+				87048A6B2AA8B83900725C77 /* concept */,
 				87F6211A2A6C3C1A008AF76E /* 문자열 예제1.c */,
 				87E444162A6AA9B500E5CE8C /* 문자열.c */,
 				87F00FCC2A6AA4E3002E4F3B /* 포인터.c */,
 				87E4441C2A6AB12100E5CE8C /* 파일.c */,
 				8784EBC62A6C361500D55483 /* 단어입력.c */,
+				87048A652AA8543900725C77 /* debug_example.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -127,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F6211B2A6C3C1A008AF76E /* 문자열 예제1.c in Sources */,
+				87048A692AA8B7F800725C77 /* dp_concept.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

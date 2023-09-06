@@ -20,5 +20,68 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94DFB619-EA92-4422-AC87-8CEA41324981"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C/debug_example.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "reverseWords(s)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "94DFB619-EA92-4422-AC87-8CEA41324981 - b4070a8e8b0559f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reverseWords"
+                  moduleName = "C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chan6502/Desktop/Agorithm/C/C/debug_example.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "94DFB619-EA92-4422-AC87-8CEA41324981 - b4070a8e8b0559f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reverseWords"
+                  moduleName = "C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chan6502/Desktop/Agorithm/C/C/debug_example.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "94DFB619-EA92-4422-AC87-8CEA41324981 - b4070a8e8b0559f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reverseWords"
+                  moduleName = "C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chan6502/Desktop/Agorithm/C/C/debug_example.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
