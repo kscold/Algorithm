@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87048A692AA8B7F800725C77 /* dp_concept.c in Sources */ = {isa = PBXBuildFile; fileRef = 87048A682AA8B7F800725C77 /* dp_concept.c */; };
+		87048A722AA8D16400725C77 /* baekjoon11727.c in Sources */ = {isa = PBXBuildFile; fileRef = 87048A712AA8D16400725C77 /* baekjoon11727.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		87048A652AA8543900725C77 /* debug_example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug_example.c; sourceTree = "<group>"; };
 		87048A682AA8B7F800725C77 /* dp_concept.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dp_concept.c; sourceTree = "<group>"; };
+		87048A6E2AA8C7D600725C77 /* baekjoon11726.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = baekjoon11726.c; sourceTree = "<group>"; };
+		87048A712AA8D16400725C77 /* baekjoon11727.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = baekjoon11727.c; sourceTree = "<group>"; };
 		8784EBC62A6C361500D55483 /* 단어입력.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "단어입력.c"; sourceTree = "<group>"; };
 		87E444162A6AA9B500E5CE8C /* 문자열.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "문자열.c"; path = "C/문자열.c"; sourceTree = SOURCE_ROOT; };
 		87E4441C2A6AB12100E5CE8C /* 파일.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "파일.c"; sourceTree = "<group>"; };
@@ -52,6 +54,15 @@
 			path = concept;
 			sourceTree = "<group>";
 		};
+		87048A6C2AA8C7A500725C77 /* baekjoon */ = {
+			isa = PBXGroup;
+			children = (
+				87048A6E2AA8C7D600725C77 /* baekjoon11726.c */,
+				87048A712AA8D16400725C77 /* baekjoon11727.c */,
+			);
+			path = baekjoon;
+			sourceTree = "<group>";
+		};
 		87F00FB32A6A9D21002E4F3B = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +82,7 @@
 		87F00FBE2A6A9D21002E4F3B /* C */ = {
 			isa = PBXGroup;
 			children = (
+				87048A6C2AA8C7A500725C77 /* baekjoon */,
 				87048A6B2AA8B83900725C77 /* concept */,
 				87F6211A2A6C3C1A008AF76E /* 문자열 예제1.c */,
 				87E444162A6AA9B500E5CE8C /* 문자열.c */,
@@ -139,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87048A692AA8B7F800725C77 /* dp_concept.c in Sources */,
+				87048A722AA8D16400725C77 /* baekjoon11727.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
