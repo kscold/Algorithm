@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87048A722AA8D16400725C77 /* baekjoon11727.c in Sources */ = {isa = PBXBuildFile; fileRef = 87048A712AA8D16400725C77 /* baekjoon11727.c */; };
+		87AB8E772AAB78E50068E315 /* 행렬 합.c in Sources */ = {isa = PBXBuildFile; fileRef = 87AB8E732AAB74750068E315 /* 행렬 합.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +28,7 @@
 		87048A6E2AA8C7D600725C77 /* baekjoon11726.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = baekjoon11726.c; sourceTree = "<group>"; };
 		87048A712AA8D16400725C77 /* baekjoon11727.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = baekjoon11727.c; sourceTree = "<group>"; };
 		8784EBC62A6C361500D55483 /* 단어입력.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "단어입력.c"; sourceTree = "<group>"; };
+		87AB8E732AAB74750068E315 /* 행렬 합.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "행렬 합.c"; sourceTree = "<group>"; };
 		87E444162A6AA9B500E5CE8C /* 문자열.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "문자열.c"; path = "C/문자열.c"; sourceTree = SOURCE_ROOT; };
 		87E4441C2A6AB12100E5CE8C /* 파일.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "파일.c"; sourceTree = "<group>"; };
 		87F00FBC2A6A9D21002E4F3B /* C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +91,7 @@
 				87E4441C2A6AB12100E5CE8C /* 파일.c */,
 				8784EBC62A6C361500D55483 /* 단어입력.c */,
 				87048A652AA8543900725C77 /* debug_example.c */,
+				87AB8E732AAB74750068E315 /* 행렬 합.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -151,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87048A722AA8D16400725C77 /* baekjoon11727.c in Sources */,
+				87AB8E772AAB78E50068E315 /* 행렬 합.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
