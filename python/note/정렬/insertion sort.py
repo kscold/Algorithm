@@ -8,7 +8,6 @@ def insertion_sort(arr):
 
 
 a = list(map(int, input().split()))
-print(a)
 print(insertion_sort(a))
 
 
@@ -24,7 +23,6 @@ def insertion_sort2(arr2):
     return arr2
 
 b = list(map(int, input().split()))
-print(b)
 print(insertion_sort2(b))
 
 

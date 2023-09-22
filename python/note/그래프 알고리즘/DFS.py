@@ -1,5 +1,5 @@
 # DFS
-def dfs(graph, v, vistied):  # (그래프, 정점, 방문처리 정보 리스트)
+def dfs(graph, v, vistied):  # (그래프, 노드(정점), 방문처리 정보 리스트)
     vistied[v] = True  # 현재 노드를 방문 처리
     print(v, end=' ')
 

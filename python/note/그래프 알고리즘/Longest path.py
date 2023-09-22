@@ -5,10 +5,10 @@ from collections import deque
 v = 7  # 노드의 개수
 graph = [[] for _ in range(v + 1)]  # 그래프 초기화
 
-# 간선 정보 입력
+# 간선 정보 입력 edge list
 edges = [(1, 2), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 5)]
 
-# 그래프 구성
+# 그래프 구성 -> 인접 리스트로 변환
 for a, b in edges:
     graph[a].append(b)
 

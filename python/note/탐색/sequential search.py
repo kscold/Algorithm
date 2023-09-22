@@ -1,4 +1,3 @@
-
 def sequential_search(arr, target):
     n = len(arr)
     for i in range(0, n):
