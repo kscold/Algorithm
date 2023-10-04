@@ -1,16 +1,30 @@
-class TreeNode:
+class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-class Solution:
-    def allPossibleFBT(self, n):
-        if n % 2 == 0:
-            return []
+    def __str__(self):
+        result = []
+        queue = [self]
+        while queue:
+            node = queue.pop(0)
+            if node:
+                result.append(str(node.val))
+                queue.append(node.left)
+                queue.append(node.right)
+            else:
+                result.append("null")
+        return "[" + ",".join(result) + "]"
 
+
+class Solution(object):
+    def allPossibleFBT(self, n):
         if n == 1:
             return [TreeNode(0)]
+
+        if n % 2 == 0:
+            return []
 
         result = []
 
@@ -27,15 +41,12 @@ class Solution:
 
         return result
 
+
 n = int(input())
 
 solution = Solution()
+
 result = solution.allPossibleFBT(n)
 
 for tree in result:
-    def treeToList(node):
-        if not node:
-            return None
-        return [node.val, treeToList(node.left), treeToList(node.right)]
-
-    print(treeToList(tree))
+    print(str(tree))
