@@ -3,24 +3,24 @@ import time
 #-----------------------------------------------------------------------
 # return type: int
 def q1(T):
-    def q1(T):
-        total = sum(T)
-        dp = [[False] * (total + 1) for _ in range(len(T) + 1)]
+    total = sum(T) # 배열의 총합이 total
+    M = [[False] * (total + 1) for _ in range(len(T) + 1)] # 이차원 리스트로 행은 len(T)+1(리스트의 길이) 갯수만큼 열은 총합 total + 1의 갯수만큼 False로 초기화
 
-        for i in range(len(T) + 1):
-            dp[i][0] = True
+    for i in range(len(T) + 1): # 배열의 길이 + 1 만큼 반복
+        M[i][0] = True # 1열의 첫번째는 전부 True로 변경
 
-        for i in range(1, len(dp)):
-            for j in range(1, total + 1):
-                dp[i][j] = dp[i - 1][j]
-                if T[i - 1] <= j:
-                    dp[i][j] |= dp[i - 1][j - T[i - 1]]
+        j = 1 # j는 1로 초기화
+        while i > 0 and j <= total: # i가 0보다 크고 j가 배열의 통합보다 같거나 작으면 반복
+            M[i][j] = M[i - 1][j] # 하나 전의 행을 현재 행렬에 대입
+            if T[i - 1] <= j: # i-1의 배열의 요소가 j보다 같거나 작으면
+                M[i][j] |= M[i - 1][j - T[i - 1]] # M[i][j] 와 M[i - 1][j - T[i - 1]]의 논리합한 값을 M[i][j]에 대입한다.
+            j = j + 1 # j에 1을 더한다.
 
-        j = total // 2
-        while j >= 0 and not dp[len(T)][j]:
-            j = j - 1
+    j = total // 2 # 배열의 총합을 절반으로 나누어 j에 대입한다.
+    while j >= 0 and not M[len(T)][j]: # j가 0보다 크고, 동적 프로그래밍 테이블 M의 가장 마지막 행에서 j열이 False일 때까지 반복, 이것은 두 도둑이 보물을 균등하게 나누는 경우를 찾기 위한 단계
+        j = j - 1 # j는 j - 1를 하여 조건에 맞는 j 값을 넣음
 
-        return total - 2 * j
+    return total - 2 * j # total은 모든 보물의 총 금액이며, j는 두 도둑이 나누어 가진 금액의 절반을 나타냄, 이를 통해 두 도둑의 차이를 계산할 수 있다.
 
 
 def compare_output(file1, file2):

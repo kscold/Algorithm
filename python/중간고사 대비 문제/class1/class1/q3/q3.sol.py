@@ -1,23 +1,23 @@
 import time
 import sys
 
-def findMinBill(money, amount, depth):
-    if amount < 0:
-        result = -sys.maxsize
-    elif depth == len(money):
-        if amount == 0:
-            result = 0
-        else:
+def findMinBill(money, amount, depth): # money 사용가능한 지폐 리스트, amount 목표금액, depth 햔재 고려중인 지폐 위치(인덱스)
+    if amount < 0: # amount가 음수이면
+        result = -sys.maxsize # reust에 음수의 최대값을 대입
+    elif depth == len(money): # 현재 고려중인 지폐 위치가 자페 리스트의 끝 인덱스와 같으면
+        if amount == 0: # 목표금액이 0과 같으면
+            result = 0 # 결과에 0을 대입
+        else: # 아니면
+            result = -sys.maxsize # 음수위 최대값을 대입
+    else: # 지폐 위치 인덱스가 양수이고 끝이 아니면
+        result1 = findMinBill(money, amount - money[depth], depth + 1) + 1 # 현재 지폐(money[depth])를 사용한 경우
+        result2 = findMinBill(money, amount, depth + 1) # 현재 지폐(money[depth])를 사용하지 않은 경우
+        if result1 < 0 and result2 < 0: # 둥
             result = -sys.maxsize
-    else:
-        result1 = findMinBill(money, amount - money[depth], depth + 1) + 1
-        result2 = findMinBill(money, amount, depth + 1)
-        if result1 < 0 and result2 < 0:
-            result = -sys.maxsize
-        elif result1 < 0 or result2 < 0:
+        elif result1 < 0 or result2 < 0: # result1과 result2가 둘다 음수이면 음수 중의 max를 함
             result = max(result1, result2)
         else:
-            result = min(result1, result2)
+            result = min(result1, result2) # result1과 result2가 둘 다 양수이면 최소
     return result
    
 #-----------------------------------------------------------------------
@@ -27,7 +27,7 @@ def q3(money, N, amount):
     # ----------------------------------------------
     # ----------------------------------------------
     result = findMinBill(money, amount, 0)
-    if result < 0:
+    if result < 0: # 음수일 때는 -1을 대입
         result = -1
     return result
 
