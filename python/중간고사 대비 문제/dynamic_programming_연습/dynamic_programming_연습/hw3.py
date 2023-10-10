@@ -66,17 +66,17 @@ def compare_output(file1, file2):
     f2.close()
 
 
-def maxprofit(P, N):
+def maxprofit(P, N): # P 막대기의 가격를 담고 있는 리스트, N 주어진 막대기의 길이
     # your code is here
     # ----------------------------------------------
-    dp = [0] * (N + 1)
+    dp = [0] * (N + 1) # DP 테이블 초기화
 
-    for i in range(1, N + 1):
-        max_profit = 0
-        for j in range(1, 4):
+    for i in range(1, N + 1): # 0번 인덱스를 없애기 위해 1부터 n까지 반복
+        max_profit = 0 # max값을 비교하기 위한 변수 초기화
+        for j in range(1, 4): # 막대기의 종류가 1, 2, 3cm 밖에 없으므로
             if i >= j:
-                max_profit = max(max_profit, dp[i - j] + P[j])
-            dp[i] = max_profit
+                max_profit = max(max_profit, dp[i - j] + P[j]) # 길이 i의 막대기를 자르지 않았을 때의 이익과 길이 i - j, 막대기를 길이 j로 자른 후 얻을 수 있는 이익(dp[i - j] + P[j]) 중 더 큰 값을 저장
+            dp[i] = max_profit # DP 리스트에 저장
 
     return dp[N]
 
