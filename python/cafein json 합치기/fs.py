@@ -1,8 +1,10 @@
 import json
 # 첫 번째 JSON 파일 경로
-input_file1 = 'data1.json'
+input_file1 = 'data3.json'
 # 두 번째 JSON 파일 경로
-input_file2 = 'data2.json'
+input_file2 = 'data4.json'
+
+input_file3 = 'data5.json'
 # 결과 JSON 파일 경로
 output_file = 'combinedData.json'
 # JSON 파일 1 읽기
@@ -11,15 +13,19 @@ with open(input_file1, 'r', encoding='utf-8') as file1:
 # JSON 파일 2 읽기
 with open(input_file2, 'r', encoding='utf-8') as file2:
     data2 = json.load(file2)
+
+with open(input_file3, 'r', encoding='utf-8') as file3:
+    data3 = json.load(file3)
 # 데이터를 순서대로 합치기
 combined_data = []
-for item1, item2 in zip(data1, data2):
+for item1, item2, item3 in zip(data1, data2, data3):
     new_item = {
         "prodName": item1["prodName"],
         "prodImage": item1["prodImage"],
-        "prodCafe": item1["prodCafe"],
+        # "prodCafe": item1["prodCafe"],
         "prodContent": item2["text"],
         "prodTag": item1.get("prodTag", []),
+        "prodPrice": item3.get("price", ""),
         "prodDetail": {
             "volume": item2.get("volume", ""),
             "kcal": item2.get("kcal", ""),
