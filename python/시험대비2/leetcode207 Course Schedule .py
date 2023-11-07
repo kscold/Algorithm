@@ -31,10 +31,10 @@ class Solution(object):
         visited = [0] * (numCourses)  # 방문 테이블을 과목 수만큼 초기화
 
         def dfs(course):
-            if visited[course] == -1:  # 방문한 코스가 -1 이면(방문 했으면) True 반환
+            if visited[course] == -1:  # 일전에 방문 중인 코스가 -1 이면 사이클이 있다는 것임으로 True 반환
                 return True
 
-            visited[course] = -1  # 방문 함을 표시
+            visited[course] = -1  # 방문 중임을 표시
 
             if course in graph:  # 그래프 안에 course가 있으면
                 for prereq in graph[course]:  # 그래프 코스의 key에 대한 value를 순회
@@ -42,8 +42,8 @@ class Solution(object):
                             prereq)):  # 전제조건을 방문했거나 아직 방문하지 않았으면서 전제조건을 dfs 돌 숭 있으면, 사이클이 존재하면 True
                         return True
 
-            visited[course] = 1  # 사이클이 존재하지 않으면 False를 표현
-            return False
+            visited[course] = 1  # 방문함을 표시
+            return False  # 사이클이 존재하지 않으면 False를 표현
 
         for course in range(numCourses):  # 방문테이블을 순회
             if visited[course] == 0:  # 방문테이블이 0이면
