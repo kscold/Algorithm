@@ -16,11 +16,12 @@ for i in range(n):
 
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
+# 상, 하, 좌, 우
 
 
 def bfs(x, y):
     queue = deque()
-    queue.append((x, y))
+    queue.append((x, y)) # 시작 좌표를 큐에 넣고 시작
     # 큐가 빌 때까지 반복
     while queue:
         x, y = queue.popleft()
@@ -31,7 +32,7 @@ def bfs(x, y):
             # 미로 찾기 공간을 벗어날 경우 무시
             if nx < 0 or ny < 0 or nx >= n or ny >= m:
                 continue
-            # 벽인 경우 무시
+            # 벽(괴물)인 경우 무시
             if gragh[nx][ny] == 0:
                 continue
             # 해당 노드를 처음 방문하는 경우에만 최단 거리 기록
@@ -39,7 +40,7 @@ def bfs(x, y):
                 gragh[nx][ny] = gragh[x][y] + 1 # 그 좌표에 현재까지의 거리를 저장, 방문을 저장하는 것이 아니라 값을 저장하는 것임
                 queue.append((nx, ny))
     # 가장 오른쪽 아래까지의 최단 거리 반환
-    return gragh[n - 1][m - 1]
+    return gragh[n - 1][m - 1] # 가장 마지막칸에 최단경로의 횟수가 저장되어 있음
 
 
 # BFS를 수행한 결과 출력
