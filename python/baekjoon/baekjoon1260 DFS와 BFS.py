@@ -57,7 +57,7 @@ graph = [[] for _ in range(n + 1)]
 
 for _ in range(m):
     a, b = map(int, input().split())
-    graph[a].append(b)
+    graph[a].append(b) # 문제에서 양방향이라고 했으므로 둘 다 리스트에 추가를 해주어야함
     graph[b].append(a)
 
 for i in graph:  # 테스트 코드 중에는 정렬이 안되어 있는 코드가 있을 수 있음
