@@ -25,18 +25,18 @@ n, m = map(int, input().split())
 
 A = []
 B = []
+sum = [[0] * m for i in range(n)]
 
 for i in range(n):
     A.append(list(map(int, input().split())))
 
-
 for i in range(n):
     B.append(list(map(int, input().split())))
 
-print(A+B)
-# results = A+B
-# for result in results:
-#     print(result, end=", ")
+for i in range(n):
+    for j in range(m):
+        sum[i][j] = A[i][j] + B[i][j]
 
-# print(B)
 
+for i in sum:
+    print(*i)
