@@ -1,4 +1,4 @@
-import random
+import random_tets
 
 n = int(input())
 per = int(input())
