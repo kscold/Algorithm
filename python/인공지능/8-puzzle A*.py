@@ -31,7 +31,6 @@ class State:
 
         return result
 
-
     def f(self):
         return self.h() + self.g()
 
@@ -41,7 +40,7 @@ class State:
     def g(self):
         return self.moves
 
-    def __it__(self, other): # x < y 를 판단하는 기준을 정의
+    def __lt__(self, other):  # x < y 를 판단하는 기준을 정의
         return self.f() < other.f()
 
     def __str__(self):
