@@ -18,7 +18,7 @@ def cold_expert(short):
 # 환자가 2달 동안 아팠다.
 # 환자의 목이 부어있다.
 
-short = ["E", "F", "A"]
+short = ["D", "F", "A"]
 print(short)
 
 cold_expert(short)

@@ -14,7 +14,7 @@ def cold_expert(short, n):
         short.append("B")
 
 
-short = ["E", "F", "A"]
+short = ["D", "F", "A"]
 Open = (1, 2, 0)
 for i in Open:
     cold_expert(short, i)
