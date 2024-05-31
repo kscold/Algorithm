@@ -33,7 +33,7 @@ graph = [
 ]
 
 # 각 노드가 방문된 정보를 리스트 자료형으로 표현(1차원 리스트)
-visited = [False] * 9 # 메모이제이션 기법을 활용
+visited = [False] * 9  # 메모이제이션 기법을 활용
 
 # 정의된 BFS 함수 호출
 bfs(graph, 1, visited)
