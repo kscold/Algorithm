@@ -1,17 +1,17 @@
 def solution(array):
-    set_array = list(set(array))
-    result = {}
-    for item in set_array:
-        result[item] = array.count(item)
+    set_list = list(set(array))
+    count_dict = dict()
+    for key in set_list:
+        count_dict[key] = array.count(key)
 
-    values_list = list(result.values())
-    max_value = max(list(result.values()))
-    key_list = list(result.keys())
+    keys_list = list(count_dict.keys())
+    values_list = list(count_dict.values())
+    max_value = max(values_list)
 
     if values_list.count(max_value) > 1:
         answer = -1
     else:
-       index = values_list.index(max_value)
-       answer = key_list[index]
+        index = values_list.index(max_value)
+        answer = keys_list[index]
 
     return answer
